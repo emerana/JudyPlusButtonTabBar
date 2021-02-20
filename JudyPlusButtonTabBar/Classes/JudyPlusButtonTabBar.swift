@@ -49,7 +49,7 @@ public protocol JudyPlusButtonActionDelegate: class {
             } else if tabBarCtrl == nil && oldValue != nil {
                 oldValue!.viewControllers!.remove(at: oldValue!.viewControllers!.count/2)
             } else {    // tabBarCtrl,oldValue 都不为 nil
-                Judy.log("tabBarCtrl 已经是 nil，无需再次设置。")
+                logDebug("tabBarCtrl 已经是 nil，无需再次设置。")
             }
         }
     }
@@ -110,7 +110,7 @@ public protocol JudyPlusButtonActionDelegate: class {
     var judyViewCtrl: UIViewController? {
         didSet{
             guard tabBarCtrl != nil else {
-                Judy.log("tabBarCtrl 为 nil！可能需要 install()")
+                logDebug("tabBarCtrl 为 nil！可能需要 install()")
                 return
             }
             tabBarCtrl!.viewControllers!.remove(at: tabBarCtrl!.viewControllers!.count/2)
@@ -248,7 +248,7 @@ private extension JudyPlusButtonTabBar {
         judyButton?.layer.masksToBounds = true
         judyButton?.addTarget(self, action:#selector(buttonAction), for:.touchUpInside)
         judyButton?.showsTouchWhenHighlighted = true    //  使其在按住的时候不会有黑影
-        if isRound { judyButton?.viewRound() }
+        if isRound { judyButtonRound() }
         // 给按钮设置图片
         judyButton!.setImage(judy, for: .normal)
 
@@ -270,7 +270,7 @@ private extension JudyPlusButtonTabBar {
     func updateFrame() {
         
         guard judy != nil else {
-            Judy.log("请在 storyboard 中为 judy 设置一张图片!")
+            logDebug("请在 storyboard 中为 judy 设置一张图片!")
             return
         }
 
@@ -317,6 +317,28 @@ private extension JudyPlusButtonTabBar {
         }
     }
     
+    
     // MARK: 脱离 EnolaGay 所需函数
 
+    
+    /// 将 judyButton 设置成正圆
+    func judyButtonRound() {
+        
+        judyButton?.layer.masksToBounds = true
+                
+        guard judyButton?.frame.size.width == judyButton?.frame.size.height else {
+            
+            return
+        }
+        judyButton?.layer.cornerRadius = frame.size.height / 2
+
+    }
+    
+    /// 此函数将只在 DEBUG 模式下打印
+    func logDebug<msg>(_ message: @autoclosure () -> msg, file: String = #file, method: String = #function, line: Int = #line) {
+        #if DEBUG
+        // 🚥❤️🧡💛💚💙💜💟🎇♒️🚦🚖🚘🚔🚙
+        print("🚘 \((file as NSString).lastPathComponent)[\(line)] 💟 \(method)\n\(message())\n🚥")
+        #endif
+    }
 }
