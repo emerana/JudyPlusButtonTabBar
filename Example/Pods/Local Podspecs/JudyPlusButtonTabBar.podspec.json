@@ -1,0 +1,22 @@
+{
+  "name": "JudyPlusButtonTabBar",
+  "version": "0.1.0",
+  "summary": "A short description of JudyPlusButtonTabBar.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/醉翁之意/JudyPlusButtonTabBar",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "醉翁之意": "Judy_u@163.com"
+  },
+  "source": {
+    "git": "https://github.com/醉翁之意/JudyPlusButtonTabBar.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "JudyPlusButtonTabBar/Classes/**/*"
+}

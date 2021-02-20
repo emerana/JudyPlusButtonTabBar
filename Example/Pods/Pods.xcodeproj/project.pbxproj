@@ -1,0 +1,769 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CB81036F20024E4FD37D4E8A12DC52A /* Pods-JudyPlusButtonTabBar_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 582E1E4442ED5E85A406A2AAB41BB420 /* Pods-JudyPlusButtonTabBar_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4652EFD686D90B30FEFCFEC35A665ED9 /* JudyPlusButtonTabBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C84035A4111BDF1151FF7E400B11F5D /* JudyPlusButtonTabBar-dummy.m */; };
+		4CFDFF127B14D14E337DA397CE4FCA8A /* JudyPlusButtonTabBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 17153AFA4FB80026FAA1F18EAD5CF159 /* JudyPlusButtonTabBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C6B48FD3E43AE51F977841F29384FB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		787D2F2D9682470D8023F1BF7C75A3CA /* Pods-JudyPlusButtonTabBar_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 084C327E4EAE2DAC63F5E525D251D0F6 /* Pods-JudyPlusButtonTabBar_Tests-dummy.m */; };
+		8B98594325E0A93400C5634B /* JudyPlusButtonTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98594225E0A93400C5634B /* JudyPlusButtonTabBar.swift */; };
+		907941B7FD467F7FDD01A94A97C46F9C /* Pods-JudyPlusButtonTabBar_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AE3EDB2C20439FD52CB0C7A30B334 /* Pods-JudyPlusButtonTabBar_Example-dummy.m */; };
+		AFB7D081BB0F50EB5C3D23C69CA4CF1F /* Pods-JudyPlusButtonTabBar_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 366E347A460B272F404FDF2ED766A64C /* Pods-JudyPlusButtonTabBar_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8A8555534DA2C5EBF5AD6A1953F2FC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DEA116CB855338FBE44094E8D8774EF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23459880E61B1F95017F47E51511BE0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D18E2511259A437EC903050334B058E;
+			remoteInfo = "Pods-JudyPlusButtonTabBar_Example";
+		};
+		EE005A75CD621B88C8409D98BB540975 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78B0B0D986CB556AD8A6B0A8DAA65921;
+			remoteInfo = JudyPlusButtonTabBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		084C327E4EAE2DAC63F5E525D251D0F6 /* Pods-JudyPlusButtonTabBar_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JudyPlusButtonTabBar_Tests-dummy.m"; sourceTree = "<group>"; };
+		0EAE802FFA92F1E3EA26FA32953EEA7B /* JudyPlusButtonTabBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JudyPlusButtonTabBar-Info.plist"; sourceTree = "<group>"; };
+		109188C1966151E23C8A2A8A4802632C /* JudyPlusButtonTabBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JudyPlusButtonTabBar.release.xcconfig; sourceTree = "<group>"; };
+		17153AFA4FB80026FAA1F18EAD5CF159 /* JudyPlusButtonTabBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JudyPlusButtonTabBar-umbrella.h"; sourceTree = "<group>"; };
+		335E67451F397E0777AE2C85153F96B6 /* Pods-JudyPlusButtonTabBar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JudyPlusButtonTabBar_Example.release.xcconfig"; sourceTree = "<group>"; };
+		366E347A460B272F404FDF2ED766A64C /* Pods-JudyPlusButtonTabBar_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JudyPlusButtonTabBar_Example-umbrella.h"; sourceTree = "<group>"; };
+		3B29C6DF5A432F0045429829D62F26DF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3F8F6DB139957646E674368EF8B95513 /* Pods_JudyPlusButtonTabBar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JudyPlusButtonTabBar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4367AAA12A0D26E51922FCC562003D83 /* Pods-JudyPlusButtonTabBar_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JudyPlusButtonTabBar_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		4B60D9BAD48355AD60DAB1625200277B /* JudyPlusButtonTabBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JudyPlusButtonTabBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56F70BC28035E3D1B68B29B92E4B04EF /* Pods-JudyPlusButtonTabBar_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JudyPlusButtonTabBar_Tests.modulemap"; sourceTree = "<group>"; };
+		582E1E4442ED5E85A406A2AAB41BB420 /* Pods-JudyPlusButtonTabBar_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JudyPlusButtonTabBar_Tests-umbrella.h"; sourceTree = "<group>"; };
+		69D5FBC8A4114870EA9063BBB9BBEA42 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		76A7A544C4C72208F529595B05BD8F23 /* JudyPlusButtonTabBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JudyPlusButtonTabBar.modulemap; sourceTree = "<group>"; };
+		77251460ADB767B65222C301EA7D79A1 /* Pods-JudyPlusButtonTabBar_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JudyPlusButtonTabBar_Tests-Info.plist"; sourceTree = "<group>"; };
+		7D1720B7FEE2A14DC0ACE81D27A830F0 /* Pods-JudyPlusButtonTabBar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JudyPlusButtonTabBar_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7D84DA5A9D7669385144A66B9D4F1BD2 /* Pods-JudyPlusButtonTabBar_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JudyPlusButtonTabBar_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8392244052BB7810C4A0D6E181A677B8 /* Pods-JudyPlusButtonTabBar_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JudyPlusButtonTabBar_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		86669F56A355AE36BCE2B8D8F856F058 /* JudyPlusButtonTabBar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = JudyPlusButtonTabBar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8B98594225E0A93400C5634B /* JudyPlusButtonTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JudyPlusButtonTabBar.swift; path = JudyPlusButtonTabBar/Classes/JudyPlusButtonTabBar.swift; sourceTree = "<group>"; };
+		8CF238E9844040F6BA54338D9AC6BFF0 /* Pods-JudyPlusButtonTabBar_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JudyPlusButtonTabBar_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		92660363F79E41DA3566B1F8AD49620D /* Pods-JudyPlusButtonTabBar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JudyPlusButtonTabBar_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		97FF3810C1819BA1A70AB9532C1CADF8 /* Pods-JudyPlusButtonTabBar_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JudyPlusButtonTabBar_Example-Info.plist"; sourceTree = "<group>"; };
+		9BBDB964B122ADD021EF60F395FC5261 /* JudyPlusButtonTabBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JudyPlusButtonTabBar-prefix.pch"; sourceTree = "<group>"; };
+		9C84035A4111BDF1151FF7E400B11F5D /* JudyPlusButtonTabBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JudyPlusButtonTabBar-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ABA9AB94606EEA11AE35D2698C87EA3D /* Pods-JudyPlusButtonTabBar_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JudyPlusButtonTabBar_Example-frameworks.sh"; sourceTree = "<group>"; };
+		B0D104837747B4CBC764369DA574D640 /* Pods-JudyPlusButtonTabBar_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JudyPlusButtonTabBar_Example.modulemap"; sourceTree = "<group>"; };
+		DAFF292EAF29ADBD746215D6CB227207 /* Pods_JudyPlusButtonTabBar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JudyPlusButtonTabBar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57AE3EDB2C20439FD52CB0C7A30B334 /* Pods-JudyPlusButtonTabBar_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JudyPlusButtonTabBar_Example-dummy.m"; sourceTree = "<group>"; };
+		FD04F2B53C519B485A1825877B7ACA4A /* JudyPlusButtonTabBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JudyPlusButtonTabBar.debug.xcconfig; sourceTree = "<group>"; };
+		FF7ADC2224F2F59DC9E1CB679757310F /* Pods-JudyPlusButtonTabBar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JudyPlusButtonTabBar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DE81624C4432205B4F68987C5847AB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C6B48FD3E43AE51F977841F29384FB3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		226BB9727C6C265BFE5979413D69E5CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA116CB855338FBE44094E8D8774EF1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C71D934D96423D741C7E0F6137B7D16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8A8555534DA2C5EBF5AD6A1953F2FC5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38E6DACB123870F0F80B47F3ADEB1C36 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				926E367755622AAC161F678696071D09 /* Pods-JudyPlusButtonTabBar_Example */,
+				EE3EBAD815F62E0687CCD6F914A0E527 /* Pods-JudyPlusButtonTabBar_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		485F3299277D63720AC9F47280A6224D /* JudyPlusButtonTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				8B98594225E0A93400C5634B /* JudyPlusButtonTabBar.swift */,
+				B6E979266191694505CF485CF0DDA0DD /* Pod */,
+				FD2D13656503E1189B08DD5766D98D91 /* Support Files */,
+			);
+			name = JudyPlusButtonTabBar;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		705EC711AF018B57279A4444567974F3 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				485F3299277D63720AC9F47280A6224D /* JudyPlusButtonTabBar */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		926E367755622AAC161F678696071D09 /* Pods-JudyPlusButtonTabBar_Example */ = {
+			isa = PBXGroup;
+			children = (
+				B0D104837747B4CBC764369DA574D640 /* Pods-JudyPlusButtonTabBar_Example.modulemap */,
+				7D84DA5A9D7669385144A66B9D4F1BD2 /* Pods-JudyPlusButtonTabBar_Example-acknowledgements.markdown */,
+				4367AAA12A0D26E51922FCC562003D83 /* Pods-JudyPlusButtonTabBar_Example-acknowledgements.plist */,
+				E57AE3EDB2C20439FD52CB0C7A30B334 /* Pods-JudyPlusButtonTabBar_Example-dummy.m */,
+				ABA9AB94606EEA11AE35D2698C87EA3D /* Pods-JudyPlusButtonTabBar_Example-frameworks.sh */,
+				97FF3810C1819BA1A70AB9532C1CADF8 /* Pods-JudyPlusButtonTabBar_Example-Info.plist */,
+				366E347A460B272F404FDF2ED766A64C /* Pods-JudyPlusButtonTabBar_Example-umbrella.h */,
+				92660363F79E41DA3566B1F8AD49620D /* Pods-JudyPlusButtonTabBar_Example.debug.xcconfig */,
+				335E67451F397E0777AE2C85153F96B6 /* Pods-JudyPlusButtonTabBar_Example.release.xcconfig */,
+			);
+			name = "Pods-JudyPlusButtonTabBar_Example";
+			path = "Target Support Files/Pods-JudyPlusButtonTabBar_Example";
+			sourceTree = "<group>";
+		};
+		9DA6DDA31345B43D8AA5D9489304C899 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B60D9BAD48355AD60DAB1625200277B /* JudyPlusButtonTabBar.framework */,
+				DAFF292EAF29ADBD746215D6CB227207 /* Pods_JudyPlusButtonTabBar_Example.framework */,
+				3F8F6DB139957646E674368EF8B95513 /* Pods_JudyPlusButtonTabBar_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6E979266191694505CF485CF0DDA0DD /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				86669F56A355AE36BCE2B8D8F856F058 /* JudyPlusButtonTabBar.podspec */,
+				3B29C6DF5A432F0045429829D62F26DF /* LICENSE */,
+				69D5FBC8A4114870EA9063BBB9BBEA42 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				705EC711AF018B57279A4444567974F3 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				9DA6DDA31345B43D8AA5D9489304C899 /* Products */,
+				38E6DACB123870F0F80B47F3ADEB1C36 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE3EBAD815F62E0687CCD6F914A0E527 /* Pods-JudyPlusButtonTabBar_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				56F70BC28035E3D1B68B29B92E4B04EF /* Pods-JudyPlusButtonTabBar_Tests.modulemap */,
+				8392244052BB7810C4A0D6E181A677B8 /* Pods-JudyPlusButtonTabBar_Tests-acknowledgements.markdown */,
+				8CF238E9844040F6BA54338D9AC6BFF0 /* Pods-JudyPlusButtonTabBar_Tests-acknowledgements.plist */,
+				084C327E4EAE2DAC63F5E525D251D0F6 /* Pods-JudyPlusButtonTabBar_Tests-dummy.m */,
+				77251460ADB767B65222C301EA7D79A1 /* Pods-JudyPlusButtonTabBar_Tests-Info.plist */,
+				582E1E4442ED5E85A406A2AAB41BB420 /* Pods-JudyPlusButtonTabBar_Tests-umbrella.h */,
+				FF7ADC2224F2F59DC9E1CB679757310F /* Pods-JudyPlusButtonTabBar_Tests.debug.xcconfig */,
+				7D1720B7FEE2A14DC0ACE81D27A830F0 /* Pods-JudyPlusButtonTabBar_Tests.release.xcconfig */,
+			);
+			name = "Pods-JudyPlusButtonTabBar_Tests";
+			path = "Target Support Files/Pods-JudyPlusButtonTabBar_Tests";
+			sourceTree = "<group>";
+		};
+		FD2D13656503E1189B08DD5766D98D91 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				76A7A544C4C72208F529595B05BD8F23 /* JudyPlusButtonTabBar.modulemap */,
+				9C84035A4111BDF1151FF7E400B11F5D /* JudyPlusButtonTabBar-dummy.m */,
+				0EAE802FFA92F1E3EA26FA32953EEA7B /* JudyPlusButtonTabBar-Info.plist */,
+				9BBDB964B122ADD021EF60F395FC5261 /* JudyPlusButtonTabBar-prefix.pch */,
+				17153AFA4FB80026FAA1F18EAD5CF159 /* JudyPlusButtonTabBar-umbrella.h */,
+				FD04F2B53C519B485A1825877B7ACA4A /* JudyPlusButtonTabBar.debug.xcconfig */,
+				109188C1966151E23C8A2A8A4802632C /* JudyPlusButtonTabBar.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JudyPlusButtonTabBar";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9E7A4BD39716EF0A16EB84F98A030A01 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CFDFF127B14D14E337DA397CE4FCA8A /* JudyPlusButtonTabBar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F900ED70BF72A414AA6DA32B773023A3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CB81036F20024E4FD37D4E8A12DC52A /* Pods-JudyPlusButtonTabBar_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC971FDCAB1E2287A5AF2006B6D02C25 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFB7D081BB0F50EB5C3D23C69CA4CF1F /* Pods-JudyPlusButtonTabBar_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2D18E2511259A437EC903050334B058E /* Pods-JudyPlusButtonTabBar_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC72C42E3F5B33FFC8BACB3803D87DBA /* Build configuration list for PBXNativeTarget "Pods-JudyPlusButtonTabBar_Example" */;
+			buildPhases = (
+				FC971FDCAB1E2287A5AF2006B6D02C25 /* Headers */,
+				7E4ABBA3B5F4A21D7BA95B9FA915A999 /* Sources */,
+				9C71D934D96423D741C7E0F6137B7D16 /* Frameworks */,
+				F08182D95A571F6F5D731742D6DE7BFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5E3E70E0CDA2C00A8B926B2CDA3ACC0 /* PBXTargetDependency */,
+			);
+			name = "Pods-JudyPlusButtonTabBar_Example";
+			productName = "Pods-JudyPlusButtonTabBar_Example";
+			productReference = DAFF292EAF29ADBD746215D6CB227207 /* Pods_JudyPlusButtonTabBar_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		78B0B0D986CB556AD8A6B0A8DAA65921 /* JudyPlusButtonTabBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7866C00567022BB1E6C653273F016B74 /* Build configuration list for PBXNativeTarget "JudyPlusButtonTabBar" */;
+			buildPhases = (
+				9E7A4BD39716EF0A16EB84F98A030A01 /* Headers */,
+				2B163B8BF087F176C71B38BE3EFE181C /* Sources */,
+				1DE81624C4432205B4F68987C5847AB2 /* Frameworks */,
+				651BDFA9B0622F35DBF3E0E588278D2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JudyPlusButtonTabBar;
+			productName = JudyPlusButtonTabBar;
+			productReference = 4B60D9BAD48355AD60DAB1625200277B /* JudyPlusButtonTabBar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B0A2F88A44741E83978DC05478D0274E /* Pods-JudyPlusButtonTabBar_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 033D93046614DA8E4802323831DABC17 /* Build configuration list for PBXNativeTarget "Pods-JudyPlusButtonTabBar_Tests" */;
+			buildPhases = (
+				F900ED70BF72A414AA6DA32B773023A3 /* Headers */,
+				D1D3E26780A316BF8EDA84669279F83F /* Sources */,
+				226BB9727C6C265BFE5979413D69E5CB /* Frameworks */,
+				AF2392F1DF319B125C7A21B2D74FFE94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6414C83350FE0872FE12212C2F902643 /* PBXTargetDependency */,
+			);
+			name = "Pods-JudyPlusButtonTabBar_Tests";
+			productName = "Pods-JudyPlusButtonTabBar_Tests";
+			productReference = 3F8F6DB139957646E674368EF8B95513 /* Pods_JudyPlusButtonTabBar_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 9DA6DDA31345B43D8AA5D9489304C899 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78B0B0D986CB556AD8A6B0A8DAA65921 /* JudyPlusButtonTabBar */,
+				2D18E2511259A437EC903050334B058E /* Pods-JudyPlusButtonTabBar_Example */,
+				B0A2F88A44741E83978DC05478D0274E /* Pods-JudyPlusButtonTabBar_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		651BDFA9B0622F35DBF3E0E588278D2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF2392F1DF319B125C7A21B2D74FFE94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F08182D95A571F6F5D731742D6DE7BFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B163B8BF087F176C71B38BE3EFE181C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B98594325E0A93400C5634B /* JudyPlusButtonTabBar.swift in Sources */,
+				4652EFD686D90B30FEFCFEC35A665ED9 /* JudyPlusButtonTabBar-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E4ABBA3B5F4A21D7BA95B9FA915A999 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				907941B7FD467F7FDD01A94A97C46F9C /* Pods-JudyPlusButtonTabBar_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1D3E26780A316BF8EDA84669279F83F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787D2F2D9682470D8023F1BF7C75A3CA /* Pods-JudyPlusButtonTabBar_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6414C83350FE0872FE12212C2F902643 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JudyPlusButtonTabBar_Example";
+			target = 2D18E2511259A437EC903050334B058E /* Pods-JudyPlusButtonTabBar_Example */;
+			targetProxy = 23459880E61B1F95017F47E51511BE0B /* PBXContainerItemProxy */;
+		};
+		F5E3E70E0CDA2C00A8B926B2CDA3ACC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JudyPlusButtonTabBar;
+			target = 78B0B0D986CB556AD8A6B0A8DAA65921 /* JudyPlusButtonTabBar */;
+			targetProxy = EE005A75CD621B88C8409D98BB540975 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		050E12D75FBBA90832F36645855BB586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD04F2B53C519B485A1825877B7ACA4A /* JudyPlusButtonTabBar.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JudyPlusButtonTabBar/JudyPlusButtonTabBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JudyPlusButtonTabBar/JudyPlusButtonTabBar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JudyPlusButtonTabBar/JudyPlusButtonTabBar.modulemap";
+				PRODUCT_MODULE_NAME = JudyPlusButtonTabBar;
+				PRODUCT_NAME = JudyPlusButtonTabBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		127B4B733CE16956CFB8EE8C001B0224 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 109188C1966151E23C8A2A8A4802632C /* JudyPlusButtonTabBar.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JudyPlusButtonTabBar/JudyPlusButtonTabBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JudyPlusButtonTabBar/JudyPlusButtonTabBar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JudyPlusButtonTabBar/JudyPlusButtonTabBar.modulemap";
+				PRODUCT_MODULE_NAME = JudyPlusButtonTabBar;
+				PRODUCT_NAME = JudyPlusButtonTabBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1C800384648236E7B282E672E389E191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D1720B7FEE2A14DC0ACE81D27A830F0 /* Pods-JudyPlusButtonTabBar_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JudyPlusButtonTabBar_Tests/Pods-JudyPlusButtonTabBar_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JudyPlusButtonTabBar_Tests/Pods-JudyPlusButtonTabBar_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7996DBDD5279414ECE1DA4C29BA18DA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF7ADC2224F2F59DC9E1CB679757310F /* Pods-JudyPlusButtonTabBar_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JudyPlusButtonTabBar_Tests/Pods-JudyPlusButtonTabBar_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JudyPlusButtonTabBar_Tests/Pods-JudyPlusButtonTabBar_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E1742D5C270AD3065B923E2185F7B5F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 335E67451F397E0777AE2C85153F96B6 /* Pods-JudyPlusButtonTabBar_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JudyPlusButtonTabBar_Example/Pods-JudyPlusButtonTabBar_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JudyPlusButtonTabBar_Example/Pods-JudyPlusButtonTabBar_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FF19AE8CF40CC93ABA8ECAAE3EFD883E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92660363F79E41DA3566B1F8AD49620D /* Pods-JudyPlusButtonTabBar_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JudyPlusButtonTabBar_Example/Pods-JudyPlusButtonTabBar_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JudyPlusButtonTabBar_Example/Pods-JudyPlusButtonTabBar_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		033D93046614DA8E4802323831DABC17 /* Build configuration list for PBXNativeTarget "Pods-JudyPlusButtonTabBar_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7996DBDD5279414ECE1DA4C29BA18DA0 /* Debug */,
+				1C800384648236E7B282E672E389E191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7866C00567022BB1E6C653273F016B74 /* Build configuration list for PBXNativeTarget "JudyPlusButtonTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				050E12D75FBBA90832F36645855BB586 /* Debug */,
+				127B4B733CE16956CFB8EE8C001B0224 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC72C42E3F5B33FFC8BACB3803D87DBA /* Build configuration list for PBXNativeTarget "Pods-JudyPlusButtonTabBar_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF19AE8CF40CC93ABA8ECAAE3EFD883E /* Debug */,
+				E1742D5C270AD3065B923E2185F7B5F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

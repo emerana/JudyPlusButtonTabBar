@@ -1,0 +1,6 @@
+framework module JudyPlusButtonTabBar {
+  umbrella header "JudyPlusButtonTabBar-umbrella.h"
+
+  export *
+  module * { export * }
+}

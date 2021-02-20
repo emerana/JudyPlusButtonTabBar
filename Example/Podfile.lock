@@ -1,0 +1,16 @@
+PODS:
+  - JudyPlusButtonTabBar (0.1.0)
+
+DEPENDENCIES:
+  - JudyPlusButtonTabBar (from `../`)
+
+EXTERNAL SOURCES:
+  JudyPlusButtonTabBar:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JudyPlusButtonTabBar: d507758c1a36a72bb3c047f0ce6164a5ea968cd7
+
+PODFILE CHECKSUM: 26920a648f16f5e19da02a0d959956f50a45740d
+
+COCOAPODS: 1.10.1
