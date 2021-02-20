@@ -13,6 +13,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		8B98595825E0AD6F00C5634B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98595725E0AD6F00C5634B /* TabBarController.swift */; };
 		B566B3D138C69AA107107FB8 /* Pods_JudyPlusButtonTabBar_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEFEEBECFCD8F075D5A90CDB /* Pods_JudyPlusButtonTabBar_Tests.framework */; };
 		CD3010FEACB71D18D983B277 /* Pods_JudyPlusButtonTabBar_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2C283AAF7C1F1671F03771 /* Pods_JudyPlusButtonTabBar_Example.framework */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,7 @@
 		607FACE51AFB9204008FA782 /* JudyPlusButtonTabBar_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JudyPlusButtonTabBar_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		8B98595725E0AD6F00C5634B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		8D6192357CFD9F39002AF91E /* Pods-JudyPlusButtonTabBar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JudyPlusButtonTabBar_Example.release.xcconfig"; path = "Target Support Files/Pods-JudyPlusButtonTabBar_Example/Pods-JudyPlusButtonTabBar_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BEFEEBECFCD8F075D5A90CDB /* Pods_JudyPlusButtonTabBar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JudyPlusButtonTabBar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C89722799C67B4C78708B1FE /* JudyPlusButtonTabBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JudyPlusButtonTabBar.podspec; path = ../JudyPlusButtonTabBar.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -95,6 +97,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				8B98595725E0AD6F00C5634B /* TabBarController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -331,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B98595825E0AD6F00C5634B /* TabBarController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);

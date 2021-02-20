@@ -154,7 +154,7 @@ public protocol JudyPlusButtonActionDelegate: class {
         didSet {
             
             if oldValue == nil, judyImageView != nil {
-                updateFrame()
+                updateViews()
                 judyButton?.isHidden = true
                 addSubview(judyImageView!)
             }
@@ -180,7 +180,7 @@ public protocol JudyPlusButtonActionDelegate: class {
     open override func layoutSubviews() {
         super.layoutSubviews()
         
-        updateFrame()
+        updateViews()
 
     }
 
@@ -248,7 +248,6 @@ private extension JudyPlusButtonTabBar {
         judyButton?.layer.masksToBounds = true
         judyButton?.addTarget(self, action:#selector(buttonAction), for:.touchUpInside)
         judyButton?.showsTouchWhenHighlighted = true    //  使其在按住的时候不会有黑影
-        if isRound { judyButtonRound() }
         // 给按钮设置图片
         judyButton!.setImage(judy, for: .normal)
 
@@ -266,8 +265,8 @@ private extension JudyPlusButtonTabBar {
     }
     
     
-    /// 更新视图控件（尺寸、堆叠层次）
-    func updateFrame() {
+    /// 更新相关视图（尺寸、堆叠层次）
+    func updateViews() {
         
         guard judy != nil else {
             logDebug("请在 storyboard 中为 judy 设置一张图片!")
@@ -291,6 +290,8 @@ private extension JudyPlusButtonTabBar {
             }
         }
         
+        if isRound { judyButtonRound() }
+
         // 整理 view 堆叠层次
         bringSubviewToFront(backgroundView!)
         bringSubviewToFront(judyButton!)
@@ -310,7 +311,11 @@ private extension JudyPlusButtonTabBar {
     /// - Parameter sender: sender
     @objc func buttonAction(sender: UIButton) {
         if judyViewCtrl == nil {
-            judyDelegate?.judyAction(sender: sender)
+            if judyDelegate == nil {
+                logDebug("大按钮无法响应点击事件，请设置 judyDelegate!")
+            } else {
+                judyDelegate?.judyAction(sender: sender)
+            }
         } else {
             tabBarCtrl?.selectedIndex = tabBarCtrl!.viewControllers!.count/2
             judyViewCtrl?.view.backgroundColor = .red
@@ -324,13 +329,11 @@ private extension JudyPlusButtonTabBar {
     /// 将 judyButton 设置成正圆
     func judyButtonRound() {
         
-        judyButton?.layer.masksToBounds = true
-                
         guard judyButton?.frame.size.width == judyButton?.frame.size.height else {
-            
+            logDebug("judyButton 非正方形，无法设置正圆！")
             return
         }
-        judyButton?.layer.cornerRadius = frame.size.height / 2
+        judyButton?.layer.cornerRadius = judyButton!.frame.size.height / 2
 
     }
     
@@ -341,4 +344,5 @@ private extension JudyPlusButtonTabBar {
         print("🚘 \((file as NSString).lastPathComponent)[\(line)] 💟 \(method)\n\(message())\n🚥")
         #endif
     }
+    
 }
