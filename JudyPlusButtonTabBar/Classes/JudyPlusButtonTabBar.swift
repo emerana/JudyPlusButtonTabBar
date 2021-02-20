@@ -49,23 +49,16 @@ public protocol JudyPlusButtonActionDelegate: class {
             } else if tabBarCtrl == nil && oldValue != nil {
                 oldValue!.viewControllers!.remove(at: oldValue!.viewControllers!.count/2)
             } else {    // tabBarCtrl,oldValue 都不为 nil
-                Judy.log("tabBarCtrl 已经是 nil，无需再次设置。")
+                logDebug("tabBarCtrl 已经是 nil，无需再次设置。")
             }
         }
     }
 
 
     // MARK: - public var
-
-    /// 是否需要动画,默认 false，这样在SB界面可以直观看到效果
-    //    @IBInspectable dynamic public var animate: Bool = false {
-    //        didSet{
-    
-    //        }
-    //    }
     
     
-    /// 是否正圆
+    /// 是否正圆，默认 false
     @IBInspectable var isRound: Bool = false
     
     /// judy 往上的偏移量，默认 0，此属性将直接改变 judy.center.y
@@ -110,7 +103,7 @@ public protocol JudyPlusButtonActionDelegate: class {
     var judyViewCtrl: UIViewController? {
         didSet{
             guard tabBarCtrl != nil else {
-                Judy.log("tabBarCtrl 为 nil！可能需要 install()")
+                logDebug("tabBarCtrl 为 nil！可能需要 install()")
                 return
             }
             tabBarCtrl!.viewControllers!.remove(at: tabBarCtrl!.viewControllers!.count/2)
@@ -154,7 +147,7 @@ public protocol JudyPlusButtonActionDelegate: class {
         didSet {
             
             if oldValue == nil, judyImageView != nil {
-                updateFrame()
+                updateViews()
                 judyButton?.isHidden = true
                 addSubview(judyImageView!)
             }
@@ -180,7 +173,7 @@ public protocol JudyPlusButtonActionDelegate: class {
     open override func layoutSubviews() {
         super.layoutSubviews()
         
-        updateFrame()
+        updateViews()
 
     }
 
@@ -248,7 +241,6 @@ private extension JudyPlusButtonTabBar {
         judyButton?.layer.masksToBounds = true
         judyButton?.addTarget(self, action:#selector(buttonAction), for:.touchUpInside)
         judyButton?.showsTouchWhenHighlighted = true    //  使其在按住的时候不会有黑影
-        if isRound { judyButton?.viewRound() }
         // 给按钮设置图片
         judyButton!.setImage(judy, for: .normal)
 
@@ -266,11 +258,11 @@ private extension JudyPlusButtonTabBar {
     }
     
     
-    /// 更新视图控件（尺寸、堆叠层次）
-    func updateFrame() {
+    /// 更新相关视图（尺寸、堆叠层次）
+    func updateViews() {
         
         guard judy != nil else {
-            Judy.log("请在 storyboard 中为 judy 设置一张图片!")
+            logDebug("请在 storyboard 中为 judy 设置一张图片!")
             return
         }
 
@@ -291,6 +283,8 @@ private extension JudyPlusButtonTabBar {
             }
         }
         
+        if isRound { judyButtonRound() }
+
         // 整理 view 堆叠层次
         bringSubviewToFront(backgroundView!)
         bringSubviewToFront(judyButton!)
@@ -310,13 +304,38 @@ private extension JudyPlusButtonTabBar {
     /// - Parameter sender: sender
     @objc func buttonAction(sender: UIButton) {
         if judyViewCtrl == nil {
-            judyDelegate?.judyAction(sender: sender)
+            if judyDelegate == nil {
+                logDebug("大按钮无法响应点击事件，请设置 judyDelegate!")
+            } else {
+                judyDelegate?.judyAction(sender: sender)
+            }
         } else {
             tabBarCtrl?.selectedIndex = tabBarCtrl!.viewControllers!.count/2
             judyViewCtrl?.view.backgroundColor = .red
         }
     }
     
+    
     // MARK: 脱离 EnolaGay 所需函数
 
+    
+    /// 将 judyButton 设置成正圆
+    func judyButtonRound() {
+        
+        guard judyButton?.frame.size.width == judyButton?.frame.size.height else {
+            logDebug("judyButton 非正方形，无法设置正圆！")
+            return
+        }
+        judyButton?.layer.cornerRadius = judyButton!.frame.size.height / 2
+
+    }
+    
+    /// 此函数将只在 DEBUG 模式下打印
+    func logDebug<msg>(_ message: @autoclosure () -> msg, file: String = #file, method: String = #function, line: Int = #line) {
+        #if DEBUG
+        // 🚥❤️🧡💛💚💙💜💟🎇♒️🚦🚖🚘🚔🚙
+        print("🚘 \((file as NSString).lastPathComponent)[\(line)] 💟 \(method)\n\(message())\n🚥")
+        #endif
+    }
+    
 }
