@@ -56,16 +56,9 @@ public protocol JudyPlusButtonActionDelegate: class {
 
 
     // MARK: - public var
-
-    /// 是否需要动画,默认 false，这样在SB界面可以直观看到效果
-    //    @IBInspectable dynamic public var animate: Bool = false {
-    //        didSet{
-    
-    //        }
-    //    }
     
     
-    /// 是否正圆
+    /// 是否正圆，默认 false
     @IBInspectable var isRound: Bool = false
     
     /// judy 往上的偏移量，默认 0，此属性将直接改变 judy.center.y
