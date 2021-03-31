@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'JudyPlusButtonTabBar'
-    s.version          = '0.0.1'
+    s.version          = '0.0.2'
     s.summary          = 'tabBar 中间有个大按钮！'
     
     # This description is used to generate tags and improve search results.
