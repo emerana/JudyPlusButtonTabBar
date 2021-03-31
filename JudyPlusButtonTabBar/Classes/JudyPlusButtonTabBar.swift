@@ -58,24 +58,24 @@ public protocol JudyPlusButtonActionDelegate: class {
     // MARK: - public var
     
     
-    /// 是否正圆，默认 false
+    /// 是否正圆，默认 false。
     @IBInspectable var isRound: Bool = false
     
-    /// judy 往上的偏移量，默认 0，此属性将直接改变 judy.center.y
+    /// judy 往上的偏移量，默认 0，此属性将直接改变 judy.center.y。
     @IBInspectable var beyondHeight: CGFloat = 0
     
-    /// 增大 judy 的边长。默认是以 UITabBarButton 高度度作为边长。默认0
+    /// 增大 judy 的边长。默认是以 UITabBarButton 高度度作为边长。默认0。
     @IBInspectable var bigSquareSide: CGFloat = 0
     
-    /// judy 的代理，此代理包含点击事件方法
+    /// judy 的代理，此代理包含点击事件方法。
     public weak var judyDelegate: JudyPlusButtonActionDelegate?
 
     
     // MARK: - private var
     
     
-    /// 中间按钮的图片，此图片将决定整个大按钮的生命周期
-    /// * warning: 此属性仅作为通过在 storyboard 中设置图片以安装中间大按钮
+    /// 中间按钮的图片，此图片将决定整个大按钮的生命周期。
+    /// - Warning: 此属性仅作为通过在 storyboard 中设置图片以安装中间大按钮。
     @IBInspectable private var judy: UIImage? = nil {
         didSet {
             // 安装
@@ -240,7 +240,6 @@ private extension JudyPlusButtonTabBar {
         judyButton = UIButton(type: .custom)
         judyButton?.layer.masksToBounds = true
         judyButton?.addTarget(self, action:#selector(buttonAction), for:.touchUpInside)
-        judyButton?.showsTouchWhenHighlighted = true    //  使其在按住的时候不会有黑影
         // 给按钮设置图片
         judyButton!.setImage(judy, for: .normal)
 
